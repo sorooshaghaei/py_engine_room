@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "templates", "examples", "tools"]
+exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib -q"
+pythonpath = [
+  "examples/app_demo/src",
+  "examples/library_demo/src",
+  "examples/research_demo/src",
+]
+testpaths = [
+  "examples/app_demo/tests",
+  "examples/library_demo/tests",
+  "examples/research_demo/tests",
+]

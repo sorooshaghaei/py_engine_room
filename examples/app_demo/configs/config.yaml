@@ -1,0 +1,4 @@
+run_name: app-demo-run
+log_level: INFO
+root_dir: .
+artifact_filename: summary.json

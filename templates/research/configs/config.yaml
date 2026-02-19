@@ -1,0 +1,8 @@
+run_name: research-template-run
+log_level: INFO
+root_dir: .
+notes:
+  - hypothesis
+  - experiment
+  - conclusion
+artifact_filename: notes_summary.md

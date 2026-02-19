@@ -1,0 +1,8 @@
+run_name: library-template-run
+log_level: INFO
+root_dir: .
+values:
+  - 1
+  - 2
+  - 3
+artifact_filename: summary.json
