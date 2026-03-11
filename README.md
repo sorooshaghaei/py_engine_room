@@ -1,42 +1,16 @@
 # py_engine_room
 
-A practical "engineering room" for learning and reusing professional Python repo design patterns.
+`py_engine_room` is a standalone project-structure guide delivered as a book.
 
-This repository is intentionally generic so you can apply the same structure to almost any project type.
+The repository keeps a single guided book that explains how to design, read, and review a clean Python project structure. The book uses one consistent example layout so the patterns are easy to transfer into new projects.
 
-## What you get
+## Contents
 
-- A reusable pipeline architecture: `config -> steps -> artifacts -> logs -> metrics`
-- Three templates: `app`, `library`, and `research`
-- Runnable demos for each template
-- Team workflow docs (Git, PRs, reviews, issues)
-- Notebook guidance and hands-on notebooks for active practice
-- A project generator script: `tools/new_project.py`
+- `book/py_engine_room_guided_book.tex`: the single LaTeX source of the guide.
+- `book/py_engine_room_guided_book.pdf`: the compiled PDF version of the same book.
 
-## Quick start
+## Repository shape
 
-```bash
-cd py_engine_room
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements-dev.txt
-make test
-make run
-```
-
-## Why this repo exists
-
-The goal is to teach *how to design* repository structures, not to lock you into one layout.
-
-- `PROJECT_STRUCTURE_GUIDE.md` explains how to choose structures for different project goals.
-- `PIPELINE_STYLE_GUIDE.md` explains why each pipeline layer exists.
-- `templates/` gives copyable starting points.
-- `examples/` proves the templates run offline in seconds.
-
-## Suggested learning path
-
-1. Read `PROJECT_STRUCTURE_GUIDE.md`
-2. Read `PIPELINE_STYLE_GUIDE.md`
-3. Run an example: `python examples/app_demo/main.py --config examples/app_demo/configs/config.yaml`
-4. Open notebooks in order under `notebooks/`
-5. Create your own repo with `python tools/new_project.py --help`
+- Root files describe the guide and keep the repository clean.
+- The only project content lives under `book/`.
+- The templates, examples, tools, notebooks, and setup files are explained inside the book rather than kept as code.

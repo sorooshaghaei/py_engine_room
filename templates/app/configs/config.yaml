@@ -1,4 +1,0 @@
-run_name: app-template-run
-log_level: INFO
-root_dir: .
-artifact_filename: summary.json
